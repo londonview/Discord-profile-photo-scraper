@@ -34,7 +34,7 @@ console.log(logo)
 
 
 async function main() {
-  const letters = ['$ ', 'K ', 'A ', 'D ', 'A ', 'D ', 'D ', 'L ', 'E'];
+  const letters = ['S ', 'I ', 'X ', 'T ', 'Y ', 'T ', 'H ', 'R ', 'E', ' E'];
   let pusher = "";
   letters.forEach((l, i) => {
       setTimeout(() => {
@@ -58,7 +58,7 @@ async function main() {
     res2.webhook = res2.webhook.replace(/https:\/\/discord\.com\/api\/webhooks\//g, '').replace(/https:\/\/canary\.discord\.com\/api\/webhooks\//g, '');
     const Webhook = res2.webhook.split('/')
     const webhook = new Discord.WebhookClient(Webhook[0], Webhook[1])
-    Spinner.start(`skadaddle is now scanning ${url}...`)
+    Spinner.start(`Sixty three is now scanning ${url}...`)
     request(url, (err, resp, html) => {
         Spinner.succeed(`Done Scraping ${url}`)
         if (!err && resp.statusCode == 200) {
@@ -72,7 +72,7 @@ async function main() {
                       {
                         "color": 0,
                         "author": {
-                          "name": `63 Pfp maker`,
+                          "name": `63`,
                           "url": `${Links}`,
                           "icon_url": `${Links}`
                         },
