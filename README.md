@@ -1,4 +1,4 @@
-Open cmd and do:
+open cmd and do:
 
 npm i discord.js
 npm i enquirer 
